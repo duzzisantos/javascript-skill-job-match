@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jobalgo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Jobalgo</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Jobalgo<i class="fas fa-male"></i></label>
+        <ul class="nav-links">
+            <li><a href="jobalgo.html">Home</a></li>
+            <li><a href="jobalgo-category.html">Job Category</a></li>
+            <li><a href="jobalgo-sponsors.html">Our sponsors</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <div class="search-box">
+            <form action="">
+                <label for="mySearch">Match your skills with a job!</label>
+                <input type="text" id="mySearch" name="mySearch" onchange="inputChange()"
+                    placeholder="Example: data analysis, surgery etc">
+            </form>
+        </div>
+
+        <div id="loader"></div>
+        <div id="search-result">
+            <div id="search-image">
+                <img id='the-image' src="" alt="Job Image">
+            </div>
+            <div id="search-info">
+                <h2 id="job-title"></h2>
+                <p id="job-salary"></p>
+                <p id="job-role"></p>
+                <p id="requires-degree"></p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="jobalgo2.js"></script>
+
+</html>

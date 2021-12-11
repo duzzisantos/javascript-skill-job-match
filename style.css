@@ -1,1 +1,360 @@
-
+/** THE NAVBAR **/
+body {
+    font-family: "Rubik", sans-serif;
+  }
+  nav {
+    height: 100px;
+    background-color: cornflowerblue;
+    margin-bottom: 35px;
+    width: 100%;
+    /*change made here*/
+    display: inline-block;
+    z-index: 1;
+    top: 0px;
+    position: fixed;
+    margin-left: -8px;
+  }
+  
+  label.logo {
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-left: 30px;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 45px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    margin-top: -80px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 24px;
+    text-decoration-line: none;
+  }
+  
+  nav ul li a:hover {
+    color: #93cbcee8;
+    background: none;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  /*COLLAPSIBLE NAVBAR*/
+  
+  @media (max-width: 952px) {
+    label.logo {
+      font-size: 40px;
+      padding-left: 50px;
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 856px) {
+    .checkbtn {
+      display: block;
+    }
+    .checkbtn i {
+      margin-left: 250px;
+    }
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(124, 117, 117);
+      top: 80px;
+      left: -150%;
+      text-align: center;
+      transition: all 0.5s;
+      display: block;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover,
+    a.active {
+      background: none;
+      color: #a7acaf;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+    label.logo {
+      margin-left: 0;
+    }
+  }
+  .container {
+    height: 120px;
+    width: 100%;
+  }
+  
+  .row {
+    height: 440px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .head {
+    height: 150px;
+    width: 100%;
+  }
+  .select-box {
+    height: 400px;
+    width: 47.5%;
+    background-color: rgba(245, 245, 245, 0.808);
+    overflow: hidden;
+  }
+  
+  .result-box {
+    height: 400px;
+    width: 47.5%;
+    background-color: rgba(245, 245, 245, 0.808);
+    margin-left: 5%;
+    overflow: hidden;
+  }
+  h1 {
+    padding-top: 120px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 50px;
+  }
+  
+  label {
+    display: block;
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+  }
+  
+  .select-box p {
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  
+  button {
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 10px;
+    width: 100px;
+  }
+  
+  details {
+    color: cornflowerblue;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  
+  summary {
+    color: #a7acaf;
+  }
+  
+  h2 {
+    margin-left: 25px;
+    color: cornflowerblue;
+  }
+  
+  #paraOne,
+  #paraTwo,
+  #paraThree {
+    text-transform: capitalize;
+    /* text-decoration-line: underline; */
+    font-size: 18px;
+    /* color: #a7acaf; */
+    color: black;
+    text-justify: inter-ideograph;
+    -ms-text-justify: inter-ideograph;
+    height: 40px;
+    width: 550px;
+    background-color: white;
+    text-indent: 20px;
+    padding-top: 10px;
+  }
+  
+  #acadLabel,
+  #topSkills {
+    color: cornflowerblue;
+    font-size: 17px;
+    margin-left: 160px;
+  }
+  
+  select {
+    color: #a7acaf;
+    border: 1px solid #c3c6c7;
+    font-size: 15px;
+    margin-left: 160px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+  }
+  section.container {
+    height: 630px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+  }
+  
+  .search-box {
+    height: 150px;
+    width: 100%;
+    margin-top: 40px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+  }
+  section.container label {
+    margin-left: 500px;
+    color: #6a6d6d;
+    font-size: 20px;
+  }
+  #mySearch {
+    height: 60px;
+    width: 660px;
+    margin-left: 300px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-indent: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    /* border-left: 2px solid #022d3b;
+    border-right: 2px solid #2d2e2e;
+    /* border-top: 4px solid #022d3b;
+    border-bottom: 4px solid #6a6d6d; */
+  }
+  
+  #search-result {
+    height: 450px;
+    width: 100%;
+    margin-top: 5px;
+    display: none;
+    flex-direction: row;
+  }
+  
+  #loader {
+    height: 80px;
+    width: 80px;
+    display: none;
+    border: 10px solid #022d3b;
+    border-bottom: 10px solid #a7acaf;
+    border-top: 10px solid #6a6d6d;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 20px;
+    animation: 4s infinite spin;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #search-image,
+  #search-info {
+    height: 430px;
+    width: 48%;
+    margin-left: 1%;
+  }
+  
+  img{
+      height: 430px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  #job-salary, #job-role, #requires-degree{
+      color: #022d3b;
+      font-size: 20px;
+      margin-left: 25px;
+      margin-bottom: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    select {
+      margin-left: 20px;
+      width: 170px;
+    }
+    #acadLabel,
+    #topSkills {
+      margin-left: 20px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    select {
+      margin-left: 12.5%;
+      width: 270px;
+    }
+    #acadLabel,
+    #topSkills {
+      margin-left: 12.5%;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 856px) {
+    select {
+      margin-left: 23.5%;
+      width: 300px;
+    }
+    #acadLabel,
+    #topSkills {
+      margin-left: 23.5%;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 856px) {
+    select {
+      margin-left: 23.5%;
+      width: 300px;
+    }
+    #acadLabel,
+    #topSkills {
+      margin-left: 23.5%;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+  
